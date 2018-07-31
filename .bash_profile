@@ -1,15 +1,10 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session
-export PATH="/Users/sbolton/.rvm/rubies/ruby-2.4.2/bin/:$PATH"
-# export PATH="/Users/sbolton/.rvm/rubies/ruby-2.5.0/bin/:$PATH"
 export PATH="/usr/local/bin/vim:$PATH"
-export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
-export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-# eval "$(pyenv init -)"
 
 # Show folder in tabs
-if [ $ITERM_SESSION_ID -a -z "$PROMPT_COMMAND" ]; then
-  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
-fi
+# if [ $ITERM_SESSION_ID -a -z "$PROMPT_COMMAND" ]; then
+#   export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+# fi
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 shopt -s histappend dotglob
@@ -100,6 +95,7 @@ yellow=$(tput setaf 3) #33
 
 source ~/.git-prompt.sh
 # PS1 uses [] so it doesn't overwrite long command lines and now does word wrap
+      aws s3 cp s3://ballantine-dev/hosts.base ~/hosts.base
 export PS1="\[$cyan\]`whoami` \[$red\]\W\[\e[m\]\[$green\]\$(__git_ps1)\[$yellow\]\$ \[$white\]"
 
 cd "code"
