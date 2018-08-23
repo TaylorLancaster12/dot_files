@@ -1,5 +1,5 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session
-export PATH="/usr/local/bin/vim:$PATH"
+export PATH="/usr/bin/vim:$PATH"
 
 # Show folder in tabs
 # if [ $ITERM_SESSION_ID -a -z "$PROMPT_COMMAND" ]; then
