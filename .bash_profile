@@ -37,14 +37,14 @@ alias bog="  bundle open"
 alias opry=" vim ~/.pryrc"
 
 # Servers
+alias sql="mysql.server start"
 alias ssnr="sudo service nginx restart"
 alias ssrn="sudo systemctl restart nginx"
 alias sshr="sudo service httpd restart"
 alias ssar="sudo service apache2 restart"
 
 # SSH to AWS
-alias saws="ssh ec2-user@hostdragon"
-alias saws2="ssh ec2-user@52.27.43.136"
+alias saws="ssh tlancaster@dragonborn"
 alias sawsold="ssh ec2-user@aws"
 alias sd="  ssh ubuntu@34.209.33.85"
 alias sd2="  ssh ubuntu@54.68.179.233"
@@ -52,7 +52,8 @@ alias sp="  ssh ubuntu@aws_news"
 alias sp2="  ssh ubuntu@35.167.109.154"
 alias jsp=" ssh ubuntu@aws_tj"
 alias tsp=" ssh ec2-user@test"
-alias swp=" ssh ec2-user@52.25.237.216" #WP client
+alias swp=" ssh tlancaster@52.25.237.216" #WP client
+alias swp2=" ssh tlancaster@54.214.199.139" #WP client 2
 alias rsp=" ssh ubuntu@rails"
 alias rsp2=" ssh ubuntu@18.237.143.24"
 alias swowza=" ssh ec2-user@54.191.120.51"
@@ -60,6 +61,10 @@ alias sbwd=" ssh ubuntu@bwd"
 # Max Ave
 alias smaxwp=" ssh -t root@198.58.126.101"
 alias smaxapi="ssh -t root@45.79.108.188"
+
+# Laravel
+alias phps="php artisan serve"
+alias phpc="php artisan tinker"
 
 # Time
 alias retime="sudo ntpdate time.nist.gov"
@@ -103,4 +108,6 @@ source ~/.git-prompt.sh
       aws s3 cp s3://ballantine-dev/hosts.base ~/hosts.base
 export PS1="\[$cyan\]`whoami` \[$red\]\W\[\e[m\]\[$green\]\$(__git_ps1)\[$yellow\]\$ \[$white\]"
 
-cd "code"
+cd "~/code"
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$PATH:$HOME/.composer/vendor/bin"

@@ -29,7 +29,7 @@ let s:bundle_dir = $v.'/bundle'
   " Level 11 Vim skillz
   " Plugin 'wikitopian/hardmode'              " No arrow keys, +, _, or hjkl
   " Level 9 Vim skills
-  Plugin 'takac/vim-hardtime'               " Can't use a key twice in X time
+  " Plugin 'takac/vim-hardtime'               " Can't use a key twice in X time
 
   " Most important
   Plugin 'scrooloose/nerdtree'              " file menu
@@ -570,7 +570,7 @@ let s:bundle_dir = $v.'/bundle'
 
 
   "= Airline ========================================================================================
-  let g:airline_powerline_fonts = 1
+  let g:airline_powerline_fonts = 0
 
 "= Language Specific Settings======================================================================
 
